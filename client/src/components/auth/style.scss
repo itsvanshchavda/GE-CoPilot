@@ -1,0 +1,643 @@
+.Auth .inner {
+    .Contain {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+  
+      .icon {
+        margin-top: 2rem;
+  
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+  
+      h1 {
+        padding-top: 5rem;
+        color: #2d333a;
+        font-size: 32px;
+      }
+  
+      p {
+        margin-top: 0.5rem;
+        font-size: 12.75px;
+        line-height: 1.5rem;
+        width: calc(18rem + 33px);
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+  
+      .labelEffect {
+        color: #6f7780;
+        position: absolute;
+        padding-left: 16px;
+        padding-top: 16px;
+        border: none;
+        transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+      }
+  
+      .active-label-green {
+        color: #191949;
+      }
+  
+      .active-label {
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 0;
+        margin-left: 10px;
+        margin-top: -10px;
+        background: white;
+      }
+  
+      .warning-label {
+        color: red !important;
+      }
+  
+      .inputEffect {
+        height: 52px;
+        color: #2d333a;
+        border: 1px solid #c2c8d0;
+        position: relative;
+        background: transparent;
+        border-radius: 3px;
+        line-height: 1.1;
+        outline: none;
+        font-size: 16px;
+        transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+      }
+  
+      .active-input-green {
+        border-color: #191949;
+      }
+  
+      .active-input {
+        position: static;
+      }
+  
+      .warning-input {
+        border-color: red !important;
+      }
+  
+      .error {
+        margin-top: 5px;
+        text-align: start;
+        color: red;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+  
+        div {
+          display: flex;
+          flex-direction: column;
+          height: 1rem;
+          width: 1rem !important;
+          color: white;
+          background: red;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          margin-right: 5px;
+        }
+      }
+  
+      .options {
+        .manual {
+          margin-top: 2em;
+  
+          div {
+            position: relative;
+  
+            input {
+              width: 18rem;
+              padding-left: 16px;
+              padding-right: 16px;
+  
+              @media screen and (max-width: 340px) {
+                width: calc(100% - 16px);
+                padding-right: 0px;
+              }
+            }
+  
+            button {
+              text-align: center;
+              height: 52px;
+              width: calc(18rem + 33px);
+              margin-top: 1.5rem;
+              color: #ffffff;
+              background: #191949;
+              transition: all 0.1s ease-in-out;
+              -moz-transition: all 0.1s ease-in-out;
+              border-radius: 3px;
+              border: none;
+              outline: none;
+              font-size: 16px;
+  
+              @media screen and (max-width: 340px) {
+                width: 100%;
+              }
+  
+              &:hover {
+                cursor: pointer;
+                background: #191949;
+              }
+            }
+          }
+        }
+  
+        .extra {
+          margin-bottom: 6rem;
+  
+          .divide {
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #c2c8d0;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+  
+            span {
+              padding: 0 10px;
+              position: absolute;
+              color: #2d333a;
+              font-size: 12px;
+              background: #ffffff;
+            }
+          }
+  
+          .btns {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+  
+            button {
+              outline: none;
+              text-align: start;
+              width: calc(18rem + 33px);
+              height: 52px;
+              padding-left: calc(16px + 2rem);
+              padding-right: 16px;
+              margin-bottom: 0.5rem;
+              position: relative;
+              color: #2d333a;
+              font-size: 16px;
+              border: 1px solid #c2c8d0;
+              border-radius: 3px;
+              background: #ffffff;
+              transition: all 0.1s ease-in-out;
+              -moz-transition: all 0.1s ease-in-out;
+  
+              @media screen and (max-width: 340px) {
+                width: 100%;
+              }
+  
+              svg {
+                top: 30%;
+                left: 16px;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+              }
+  
+              &:hover {
+                background: rgba(17, 1, 1, 0.1);
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+  
+      div[data-for="acc-sign-up-login"] {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+  
+        span,
+        a {
+          font-size: 12px;
+          text-decoration: none;
+        }
+  
+        span {
+          color: #2d333a;
+          padding-right: 3px;
+        }
+  
+        a {
+          color: #191949;
+          padding: 5px 5px;
+          border-radius: 3px;
+          transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+  
+          &:focus {
+            background: rgba(0, 123, 173, 0.15);
+          }
+        }
+      }
+  
+      .Form {
+        margin-top: 1rem;
+  
+        .email {
+          position: relative;
+  
+          input {
+            height: 52px;
+            width: 18rem;
+            padding-left: 16px;
+            padding-right: 16px;
+            color: #2d333a;
+            border: 1px solid #c2c8d0;
+            background: white;
+            border-radius: 3px;
+            line-height: 1.1;
+            outline: none;
+            font-size: 16px;
+            transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+  
+            @media screen and (max-width: 340px) {
+              width: calc(100% - 16px);
+              padding-right: 0px;
+            }
+          }
+  
+          button {
+            position: absolute;
+            right: 10px;
+            font-size: 16px;
+            top: 15%;
+            color: #191949;
+            padding: 5px 5px;
+            border-radius: 3px;
+            border: none;
+            background: white;
+            transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            cursor: pointer;
+  
+            &:focus {
+              background: rgba(0, 123, 173, 0.15);
+            }
+          }
+        }
+  
+        .password {
+          margin-top: 0.8rem;
+          position: relative;
+  
+          input {
+            width: calc((18rem + 16px) - 4rem);
+            padding-left: 16px;
+            padding-right: 4rem;
+  
+            @media screen and (max-width: 340px) {
+              width: calc((100%) - (4rem + 16px));
+            }
+          }
+  
+          button {
+            top: 0;
+            position: absolute;
+            right: 0;
+            height: 100%;
+            border: none;
+            padding: 0 10px;
+            background: transparent;
+            transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+  
+            svg {
+              fill: #6f7780;
+              height: 1.2rem;
+              width: 1.2rem;
+            }
+  
+            &:hover {
+              cursor: pointer;
+              background: rgba(0, 0, 0, 0.1);
+            }
+          }
+        }
+  
+        .otp {
+          margin-top: 0.8rem;
+          position: relative;
+  
+          input {
+            width: calc((18rem + 16px) - 4rem);
+            padding-left: 16px;
+            padding-right: 4rem;
+  
+            @media screen and (max-width: 340px) {
+              width: calc((100%) - (4rem + 16px));
+            }
+          }
+  
+          button {
+            top: 0;
+            position: absolute;
+            right: 0;
+            height: 100%;
+            border: none;
+            padding: 0 10px;
+            background: transparent;
+            transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+  
+            svg {
+              fill: #6f7780;
+              height: 1.2rem;
+              width: 1.2rem;
+            }
+  
+            &:hover {
+              cursor: pointer;
+              background: rgba(0, 0, 0, 0.1);
+            }
+          }
+        }
+  
+        .reset,
+        .confirm {
+          margin-top: 1rem;
+          text-align: center;
+          height: 52px;
+          width: calc(18rem + 33px);
+          color: #ffffff;
+          background: #191949;
+          transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          border-radius: 3px;
+          border: none;
+          outline: none;
+          font-size: 16px;
+  
+          @media screen and (max-width: 340px) {
+            width: 100%;
+          }
+  
+          &:hover {
+            cursor: pointer;
+            background: #191949;
+          }
+        }
+  
+        .timer {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          width: 100%;
+          height: 52px;
+  
+          button {
+            margin-top: 1rem;
+            text-align: center;
+            height: 52px;
+            width: calc(18rem + 33px);
+            color: #ffffff;
+            background: #191949;
+            transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+  
+            @media screen and (max-width: 340px) {
+              width: 100%;
+            }
+  
+            &:hover {
+              cursor: pointer;
+              background: #191949;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .dark {
+    .Auth .inner {
+      .Contain {
+        .icon {
+          svg {
+            fill: #ffffff;
+          }
+        }
+  
+        h1 {
+          color: #ffffff;
+        }
+  
+        p {
+          color: #ffffff;
+        }
+  
+        .labelEffect {
+          color: #bfbfbf;
+        }
+  
+        .active-label {
+          background: #333333;
+          color: #ffffff;
+        }
+  
+        .active-label-green {
+          color: #00ff00;
+        }
+  
+        .warning-label {
+          color: #ff0000;
+        }
+  
+        .inputEffect {
+          background: #333333;
+          color: #ffffff;
+          border: 1px solid #444444;
+  
+          &:focus {
+            border-color: #00ff00;
+          }
+        }
+  
+        .active-input-green {
+          border-color: #00ff00;
+        }
+  
+        .warning-input {
+          border-color: #ff0000;
+        }
+  
+        .error {
+          color: #ff0000;
+  
+          div {
+            background: #ff0000;
+          }
+        }
+  
+        .options {
+          .manual {
+            div {
+              input {
+                background: #333333;
+                color: #ffffff;
+                border: 1px solid #444444;
+  
+                &:focus {
+                  border-color: #00ff00;
+                }
+              }
+  
+              button {
+                background: #444444;
+                color: #ffffff;
+  
+                &:hover {
+                  background: #555555;
+                }
+              }
+            }
+          }
+  
+          .extra {
+            .divide {
+              border-bottom: 1px solid #444444;
+  
+              span {
+                color: #ffffff;
+                background: #333333;
+              }
+            }
+  
+            .btns {
+              button {
+                background: #444444;
+                color: #ffffff;
+                border: 1px solid #555555;
+  
+                &:hover {
+                  background: #555555;
+                }
+  
+                svg {
+                  fill: #ffffff;
+                }
+              }
+            }
+          }
+        }
+  
+        div[data-for="acc-sign-up-login"] {
+          span {
+            color: #ffffff;
+          }
+  
+          a {
+            color: #00ff00;
+  
+            &:focus {
+              background: rgba(0, 255, 0, 0.15);
+            }
+          }
+        }
+  
+        .Form {
+          .email {
+            input {
+              background: #333333;
+              color: #ffffff;
+              border: 1px solid #444444;
+  
+              &:focus {
+                border-color: #00ff00;
+              }
+            }
+  
+            button {
+              background: #444444;
+              color: #ffffff;
+  
+              &:focus {
+                background: rgba(0, 255, 0, 0.15);
+              }
+            }
+          }
+  
+          .password {
+            input {
+              background: #333333;
+              color: #ffffff;
+              border: 1px solid #444444;
+  
+              &:focus {
+                border-color: #00ff00;
+              }
+            }
+  
+            button {
+              background: #444444;
+  
+              svg {
+                fill: #bfbfbf;
+              }
+  
+              &:hover {
+                background: rgba(0, 255, 0, 0.1);
+              }
+            }
+          }
+  
+          .otp {
+            input {
+              background: #333333;
+              color: #ffffff;
+              border: 1px solid #444444;
+  
+              &:focus {
+                border-color: #00ff00;
+              }
+            }
+  
+            button {
+              background: #444444;
+  
+              svg {
+                fill: #bfbfbf;
+              }
+  
+              &:hover {
+                background: rgba(0, 255, 0, 0.1);
+              }
+            }
+          }
+  
+          .reset,
+          .confirm,
+          .timer button {
+            background: #191949;
+            color: #ffffff;
+  
+            &:hover {
+              background: #282a36;
+            }
+          }
+        }
+      }
+    }
+  }
+  
