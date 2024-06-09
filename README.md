@@ -64,8 +64,9 @@
 
 👤 **Vansh Chavda**
 
-- **Email**: [vanshchavda111@gmail.com](mailto:vanshchavda111@gmail.com)
+- **Email**: [vanshchavda111@gmail.com](mailto:vanshchavda328@gmail.com)
 - **Twitter**: [@vansh_chavda_](https://twitter.com/vansh_chavda_)
 - **LinkedIn**: [Vansh Chavda](https://www.linkedin.com/in/vanshchavda07)
+- **Portfolio**:[vanshchavda.me](https://www.vanshchavda.me)
 
 Keep Coding! 🚀
